@@ -105,7 +105,7 @@ public class SinglePromptChat : MonoBehaviour
     void TrimMessageHistory()
     {
         if (messageHistory > 1 && messages.Count > messageHistory)
-            messages.RemoveRange(messageHistory - 1, messages.Count - messageHistory);
+            messages.RemoveRange(0, messages.Count - messageHistory);
     }
 }
 
